@@ -38,9 +38,9 @@
 		"typescript": "^5.5.2"
 	},
 	"dependencies": {
-		"@walletconnect/solana-adapter-ui": "0.0.5",
-		"@walletconnect/universal-provider": "2.14.0",
-		"@walletconnect/utils": "2.14.0",
+		"@walletconnect/solana-adapter-ui": "0.0.6",
+		"@walletconnect/universal-provider": "2.15.1",
+		"@walletconnect/utils": "2.15.1",
 		"bs58": "6.0.0"
 	},
 	"peerDependencies": {
