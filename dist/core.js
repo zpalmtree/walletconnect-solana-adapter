@@ -227,7 +227,7 @@ export class WalletConnectWallet {
             return;
         if (!this._UniversalProvider)
             throw new Error('WalletConnect Adapter - cannot init modal when Universal Provider is undefined');
-        const { WalletConnectModal } = await import('@walletconnect/solana-adapter-ui');
+        const { WalletConnectModal } = await import('appkit-universal');
         this._modal = new WalletConnectModal({
             projectId: this._projectId,
             universalProvider: this._UniversalProvider,

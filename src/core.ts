@@ -1,5 +1,5 @@
 import { Transaction, VersionedTransaction, PublicKey } from '@solana/web3.js'
-import type { WalletConnectModal } from '@walletconnect/solana-adapter-ui'
+import type { WalletConnectModal } from 'appkit-universal'
 import { UniversalProvider, type ConnectParams } from '@walletconnect/universal-provider'
 import type { SessionTypes, SignClientTypes } from '@walletconnect/types'
 import { parseAccountId } from '@walletconnect/utils'
@@ -278,7 +278,7 @@ export class WalletConnectWallet {
 		if (!this._UniversalProvider)
 			throw new Error('WalletConnect Adapter - cannot init modal when Universal Provider is undefined')
 
-		const { WalletConnectModal } = await import('@walletconnect/solana-adapter-ui')
+		const { WalletConnectModal } = await import('appkit-universal')
 
 		this._modal = new WalletConnectModal({
 			projectId: this._projectId,
